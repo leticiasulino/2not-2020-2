@@ -92,6 +92,7 @@ vetor1.forEach(function(fruta){
 
 
 
+
 console.log('-----------------------------')
 
 
