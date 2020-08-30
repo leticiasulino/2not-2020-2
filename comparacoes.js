@@ -28,6 +28,7 @@ console.log(true > false)
 console.log(false > true)
 
 
+
 //Tipo de dados comparavéis em JS:
 // - Number
 // - String

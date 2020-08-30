@@ -26,6 +26,7 @@ let aleatorio = function(){
     return Math.floor(Math.random() * 100)    
 }
 
+
 console.log('__________________________________')
 console.log(aleatorio())
 
