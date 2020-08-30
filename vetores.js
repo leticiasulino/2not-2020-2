@@ -77,7 +77,6 @@ console.log('-----------------------------')
 for(let fruta of vetor1) {
     console.log(fruta)
 }
-
 console.log('-----------------------------')
 //Forma 3: ForEach()
 //O argumento do ForEach() é uma função que recebe cada elemento do vetor para fazer algo com ele
