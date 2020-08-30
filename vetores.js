@@ -67,10 +67,9 @@ console.log(vetor1)
 //seu nº de elementos (length)
 
 //i++ significa i = i + 1
-for(let i = 0; i < vetor1.length; i++)
+for(let i = 0; i < vetor1.length; i++){
     console.log(vetor1[i])
-
-
+}
 console.log('-----------------------------')
 
 //Forma 2: For...of 
@@ -78,3 +77,9 @@ console.log('-----------------------------')
 for(let fruta of vetor1) {
     console.log(fruta)
 }
+
+
+
+
+
+
