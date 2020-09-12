@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* use script impede que variaveis sejam declaradas
+        sem o uso de let, var ou const 
+        Inicializar variaveis diretamente é má pratica de 
+        programação*/
+        'use script'
+
+        //Obtendo entrada do usuário: prompt()
+        // - Mostra uma mensagem (pergunta) para o usuário
+        // - e o deixa digitar uma resposta.
+        // - O resultado do prompt() deve ser armazenado
+        // - em uma variável para posterior utilização
+
+        let nome = prompt('Qual o seu nome?')
+
+        //Saída de dados: alert()
+
+        alert(nome)
+
+        //Saída de dados: document.write()
+        document.write(nome)
+
+        //Saída de dados: console.log() **segredo do programador aperta f12 para ver a mensagem
+        //é uma ferramenta do desenvolvedor
+        console.log(nome)
+
+        //Entrada de dados: confirm()
+        // - Exibe uma pergunta e os botões OK e cancelar
+        // - Se apertar OK -> true 
+        // - Se apertar Cancelar -> false
+        let resposta = confirm('Tem certeza?')
+        document.write(resposta)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
