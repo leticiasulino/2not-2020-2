@@ -19,22 +19,29 @@
         let soma = 0
 
         //Number tem o mesmo efeito do perseFloat
+        let num = 1 //Qualquer coisa que não seja 0
 
-        let num = Number(Prompt('Informe um número a ser somado (ou 0 para terminar):'))
+        /*
+            Caracteristicas do loop while
+            1) Local do teste: no inicio
+            2) Garantia de execução: 0 (Zero)
+            3) Número de repetições: indeterminado
+        
+        */
 
-        //Estrutura de repetição
+        //Estrutura de repetição: While
         while(num != 0){
-            soma = soma + num 
-            num = Number(Prompt('Informe um número a ser somado (ou 0 para terminar):'))
+            //Number tem o mesmo efeito do parseFloat
+            num = Number(prompt('Informe um número a ser somado (ou 0 para terminar):'))
+
+            // O número somado só entra na soma se for válido
+            if(! isNaN(num)){
+                soma = soma + num
+            }
 
         }
 
-        document.write(`A soma dos números informados é ${soma}.´)
-
-
-
-
-
+        document.write(`A soma dos números informados é ${soma}.`)
 
     </script>
 </head>
