@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        /* use script impede que variaveis sejam declaradas
+        sem o uso de let, var ou const 
+        Inicializar variaveis diretamente é má pratica de 
+        programação*/
+        'use script'
+
+        /* Peça ao usuário para informar números, repetidamente. 
+        Esses números vão sendo somados até que o usuário informe 0.
+
+        */
+
+        let soma = 0
+
+        //Number tem o mesmo efeito do perseFloat
+
+        let num = Number(Prompt('Informe um número a ser somado (ou 0 para terminar):'))
+
+        //Estrutura de repetição
+        while(num != 0){
+            soma = soma + num 
+            num = Number(Prompt('Informe um número a ser somado (ou 0 para terminar):'))
+
+        }
+
+        document.write(`A soma dos números informados é ${soma}.´)
+
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
