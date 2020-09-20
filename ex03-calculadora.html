@@ -27,18 +27,17 @@
         */
 
         //parseFloat() *tenta* converter string em números de ponto flutuante
-        let num1 = parseFloat(prompt('Informe o primeiro número:'))
-        let num2 = parseFloat(prompt('Informe o segundo número:'))
-        let num3 = prompt('Informe a operação desejada (+, -, *, x, X, / ou :):')
+        let num1 = prompt('Informe o primeiro número:')
+        let num2 = prompt('Informe o segundo número:')
+        let res = prompt('Informe a operação desejada (+, -, *, x, X, / ou :):')
 
         let res
-        document.write(`O resultado da operação:`)
 
         //Teste de validação dos números
-        //if(isNaN(num1)) || isNaN(num2)) {
+        if(isNaN(num1)) || isNaN(num2)) {
            // alert('ERRO: pelo menos um dos números informados é inválido.')
-        //}
-        if(oper == '+') {
+        }
+        else if(oper == '+') {
             res = num1 + num2
         }
         else if(oper == '-') {
@@ -50,11 +49,11 @@
         else if(oper == '/' || oper == ':') {
             res = num1 / num2
         }
-        /*else {
+        else {
             alert('ERRO: o operador informado é inválido.')
         }*/
-    document.write(`O resultado da operação:`)
-        
+        document.write(`O resultado da operação: ${num1} + ${num2} é igual a ${res}`)
+    
 
     </script>
 </head>
