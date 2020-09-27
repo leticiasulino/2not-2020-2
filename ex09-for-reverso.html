@@ -22,6 +22,19 @@
 
         */
 
+       let num
+       do {
+           num = parseInt(prompt('Informe umnúmero inteiro:'))
+       } while(isNaN(num) || num <= 0)
+
+       let fatorial = 1
+       for(let i = num; i > 1; i--) {
+           fatorial *= i // Equivale a: faatorial = fatorial * i
+
+       }
+
+       alert(`${num}! é igual a ${fatorial}`)
+
     </script>
 </head>
 <body>
