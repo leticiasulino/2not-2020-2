@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <h1>Formulário de cálculo de preço</h1>
+    <!-- label e input são elementos inline (ouem linha)-->
+    <!-- div é um elemento de bloco-->
+    <div>
+        <label>Nome do produto</label>
+        <input size='30'>   
+    </div>
+
+    <div>
+        <label>Quantidade</label>
+        <input id="qtd" type="number" min="1" max="10">
+    </div>
+
+    <div>
+        <label>Preço unitário</label>
+        <input id="preco_unit" type="number" step="0.01" min="0.01">
+    </div>
+
+    <div> 
+        <label>PREÇO TOTAL</label>
+        <span id="resultado"> </span>
+
+    </div>
+
+    <script>
+        /* use script impede que variaveis sejam declaradas
+        sem o uso de let, var ou const 
+        Inicializar variaveis diretamente é má pratica de 
+        programação*/
+        'use script'
+
+        let elemqtd = document.querySelector('#qtd') //Forma moderna
+        let elemPrecoUnit = document.getElementById('preco_unit') //Forma tradicional
+        let elemResultado = document.querySelector('#resultado')
+
+        function calcular(){
+            let quantidade = parseFloat(elemqtd.value) //Forma Tradicional
+            let precoUnit = Number(elemPrecoUnit.value) //Forma moderna
+
+            if(!isNaN(quantidade) && !isNaN(precoUnit)) {
+                elemResultado.innerText = (quantidade * precoUnit).toFixed(2) // 2 casas decimais
+            }
+            else {
+                elemResultado.innerText = ''
+            }
+        }
+
+        elemqtd.addEventListener('change', calcular)
+        elemPrecoUnit.addEventListener('change', calcular)
+
+
+
+
+    </script>
+
+</body>
+</html>
