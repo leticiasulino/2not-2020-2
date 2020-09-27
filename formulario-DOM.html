@@ -53,9 +53,14 @@
                 elemResultado.innerText = ''
             }
         }
-
+        //change: o valor do input mudou (só detectável após sair do elemento)
         elemqtd.addEventListener('change', calcular)
         elemPrecoUnit.addEventListener('change', calcular)
+
+        //keyup: uma tecla foi precionada e liberada
+        elemqtd.addEventListener('keyup', calcular)
+        elemPrecoUnit.addEventListener('keyup', calcular)
+
 
 
 
