@@ -108,7 +108,7 @@ console.timeEnd('Buscando o valor 4110')
 
 
 
-const nomes = require('./dados/vetor-nomes.')
+const nomes = require('./dados/vetor-nomes')
 
 
 console.log('-------------')
